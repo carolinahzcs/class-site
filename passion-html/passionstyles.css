@@ -1,0 +1,52 @@
+body {
+  background-color:rgb(250, 243, 217)
+}
+
+p.a {
+  font: 25px garamond, serif;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+p.b {
+  font: 18px garamond, serif;
+  text-align:center;
+  padding-top:20px;
+}
+
+div.intro {
+  font: 14px garamond, serif;
+  text-align:center;
+
+}
+img {
+  width: 200px;
+  height: 300px;
+  margin-right: 0;
+}
+
+.static {
+  position: static;
+  background:rgb(250, 248, 212);
+  width: 45%;
+  height: 770px;
+  margin: 0 auto;
+}
+
+.left {
+  padding-left: 35px
+}
+
+div.poemtext {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 50px;
+}
+
+.poemright {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 300px;
+}
