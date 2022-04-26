@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+button{
+  background-color:rgb(242, 157, 198);
+  border-radius: 50%;
+  border:none;
+  cursor: cell;
+  padding:20px;
+}
+.sidebar {
+  background-color: rgb(173, 224, 136);
+  position: fixed;
+  top:0;
+  right:-200px;
+  height:300px;
+  width:100px;
+  padding:100px;
+  transition: right .5s ease-in-out;
+}
+
+.active {
+right:0;
+}
+
+.marquee {
+  width:100%;
+  overflow: hidden;
+}
+
+.draggable{
+  cursor:grab;
+  width:300px;
+  height:300px;
+  background-color: rgb(179, 237, 218);
+}
