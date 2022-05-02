@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-button{
+.button{
   background-color:rgb(242, 157, 198);
   border-radius: 50%;
   border:none;

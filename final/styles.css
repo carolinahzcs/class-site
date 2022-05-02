@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.main-container {
+  display: flex;
+  margin-top: 100px;
+  overflow:hidden;
+}
+
+.left {
+  font-size: 17px;
+  font-family: papyrus, fantasy;
+  border: 2px solid rgb(245, 240, 203);
+  border-style:inset;
+  background-color: rgb(242, 232, 193);
+  width: 50%;
+  height: 600px;
+  float: left;
+  margin-left: 250px;
+
+}
+
+.draggable{
+  cursor:grab;
+  width:100px;
+  height:100px;
+}
+canvas[resize]{
+  width:100%;
+  height:50%;
+  border:2px solid white;
+
+}
+
+.right {
+  font-size: 17px;
+  font-family: papyrus, fantasy;
+  border: 8px solid rgb(245, 240, 203);
+  border-style:outset;
+  background-color: rgb(242, 232, 193);
+  width: 50%;
+  height: 600px;
+  float: right;
+  margin-right: 250px;
+  margin-left: 2px;
+}
+
+img {
+   position: relative;
+   z-index: 1;
+}
+.special {
+  color: rgb(142, 149, 29);
+}
+
+.special:hover {
+  color: rgb(121, 32, 45);
+  cursor: pointer;
+}
+
+.special:hover+.hidden {
+  opacity: 1;
+}
+.hidden {
+  position: absolute;
+  opacity: 0;
+  transition: opacity .5s;
+  bottom: 20px;
+  right: 250px;

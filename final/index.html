@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>final</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+  <audio controls>
+    <source src="Sarah's_Crime.ogg" type="audio/ogg">
+    <source src="Sarah's_Crime.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="main-container">
+    <div class="left">
+
+      <canvas id="canvas" resize></canvas>
+      <p> August 13, 2018, 2:47 am</p>
+      <p>He reaches his hand out, wanting to touch the life in front of him, but he just touches air. It's so close, he thinks he can grab it, but eyes lie. He's running, thinking he can get a grasp if he reaches far enough but nothing. It's
+        frustration that starts to settle, he wonders why it's so unattainable when it's right in front of him. He thinks, "why is it there if I can't do anything about it?" He sees that if he holds his hand far enough and shuts an eye that it
+        appears he's gotten a hold of it. But that is nothing but a lie too. </p>
+
+
+
+    </div>
+
+
+    <div class="right">
+      <p>this tranquil being</p>
+      <p>the <span class="special">fish</span><img class="hidden" src="fish.png" alt="fish" width="300" height "400"> practices wisdom</p>
+      <p>to awake the world</p>
+      <div class="draggable"><img src="tape.png" alt="tape" width="200" height="200"></div>
+      <div class="draggable"><img src="eye.png" alt="eye" width="200" height="200"></div>
+      <div class="draggable"><img src="purpleflowers.png" alt="purpleflowers" width="200" height="200"></div>
+      <div class="draggable"><img src="miffy.png" alt="miffy" width="200" height="200"></div>
+      <div class="draggable"><img src="whiteflower.png" alt="whiteflowers" width="200" height="200"></div>
+
+
+
+    </div>
+  </div>
+
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+  <script src="jquery.marquee.min.js"></script>
+  <script src="functions.js"></script>
+
+  <script type="text/javascript" src="js/paper-full.min.js"></script>
+  <script type="text/paperscript" canvas="canvas">
+
+    var myPath = new Path();
+
+  function onMouseDown(event){
+    myPath= new Path();
+    myPath.fillColor={
+      hue: Math.random() * 360,
+      saturation: .5,
+      brightness: .5,
+    };
+    path.add(event.point);
+  }
+
+  function onMouseDrag(event) {
+    var step = event. delta / 2;
+    step.angle += 90;
+
+    var top = event.middlePoint + step;
+    var bottom = event. middlePoint - step;
+
+    myPath.add(top);
+    myPath.insert(0, bottom);
+    myPath.smooth();
+  }
+
+  function onMouseUp(event) {
+    myPath.add(event.point);
+    myPath.closed = true;
+    myPath.smooth();
+  }
+
+
+$( function() {
+   $( ".draggable" ).draggable();
+ } );
+
+ $( function() {
+    $( ".drag" ).draggable();
+  } );
+
+  </script>
+</body>
+
+<html>
