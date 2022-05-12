@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color:rgb(223, 199, 222);
+}
+
+.desktop-box{
+  background-color: rgb(149, 149, 179);
+  height:100px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.mobile-box{
+  background-color: rgb(22, 66, 170);
+  height:100px;
+  justify-content:center;
+  align-items: center;
+  display:none;
+}
+
+.checkers{
+  display:flex;
+}
+
+.box{
+  width:100%;
+  height:100px;
+}
+
+.light{
+  background-color:rgb(236, 211, 182);
+}
+
+.dark{
+  background-color:rgb(83, 76, 120);
+}
+
+.object-below{
+  background-color: rgb(150, 194, 137);
+  height:200px;
+  border-radius:50%;
+  transition: border-radius 1s;
+}
+
+@media screen and (max-width:900px) {
+  body{
+    background-color: rgb(212, 247, 110);
+  }
+
+  .object-below{
+    background-color:rgb(219, 34, 153);
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width:600px){
+  /* mobile */
+  body{
+    background-color: rgb(127, 210, 224);
+  }
+
+  .checkers{
+    /* display:block; can end up breaking code */
+    flex-wrap:wrap;
+  }
+
+  .box{
+    width:33.33%;
+  }
+
+  .mobile-box{
+    display:flex;
+  }
+
+  .desktop-box{
+    display:none;
+  }
+}
