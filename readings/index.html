@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>responses</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="jquery-ui.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Taeyoon Choi</a></li>
+        <li><a href="#tabs-2">Frank Chimero</a></li>
+        <li><a href="#tabs-3">Laurel Schwulst</a></li>
+        <li><a href="#tabs-4">Mindy Seu</a></li>
+      </ul>
+      <div id="tabs-1">
+        <h2>Hello, World!</h2>
+        <p>First, the aesthetic aspect</p>
+        <p>I really enjoyed how this website was displayed. The drawings and writings in marker helped me pay more attention and I overall felt more invested in the story. Not only was it nice to look at but it helped portray Taeyoon's story on her journey of creating her own computer.
+
+        <p>Computers began with humans so I think it's funny that the inside of a microchip resembles intricate cities. It's not so much comedic but it's fitting.</p>
+        <p>When we're trying to get to the bottom of something, we must take it apart and reassemble it from the very beginning, which is what Taeyoon Choi did in this article on handbuilding a computer. I'm one of those people who needs comparisons and metaphors to understand how complex ideas work. So the comparison of a computer to a human and microchips to cities helped me understand this so much more than if it was just a basic step by step reading on creating a computer.</p>
+      </div>
+      <div id="tabs-2">
+        <h2>The Web's Grain</h2>
+        <p>The quote from Gaston Bachelard: "We begin in admiration and end by organizing our disappointment" is a great way to describe how technology mostly is nowadays. It doesn't just apply to technology but for passions as well. As an artist, it's common to get burnout, that point where you lose motivation, art block or writer's block, and for some artists they can't get themselves back in ito it once burnout has occurred. That was the case for me with drawing and painting, I got so frustrated and eventually drawing became a chore, it was something I dreaded and my relationship with drawing now is torn. </p>
+
+        <p>I think we tend to get caught up in the details and in the weight of our passions which is how we lose interest and forget why we even chose to do it in the first place. It just becomes overwhelming.</p>
+
+        <p>I don't think there's an end for technology in sight, there will be more and more add ons, as technology doesn't replace but add on. Technology consumes us already and we can see that technology is starting to become us with AI as well, it's infinitely growing.</p>
+      </div>
+      <div id="tabs-3">
+        <h2>My website is a shifting house next to a river of knowledge. What could yours be?</h2>
+        <p>I think when I create my own website, it'd probably be like a puddle. I work in bursts of energy, so I can really see my own website to be like that too. I'd like it to be a garden as well, as I have so many ideas that need to be taken out of my mind and onto some sort of thing that can document it. A website can truly be whatever we want it to be, we mold a website into what we want it to be.</p>
+      </div>
+      <div id="tabs-4">
+        <h2>The Poetry of Tools</h2>
+        <p>I liked the question of if the web is living or not, and the answer that it is, indeed, alive. </p>
+        <p>I believe that technology is a language, obviously it is when you think about coding but I mean using technology such as our phones or computers and using apps to message people, the mere action of clicking on that app. That's all language, tools, to help us speak. It's one of those situations where the medium is the message, as Marshall McLuhan said.
+      </div>
+    </div>
+
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+  <script src="jquery.marquee.min.js"></script>
+  <script src="jquery-ui.min.js"></script>
+
+  <script>
+    $(function() {
+      $("#tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
+      $("#tabs li").removeClass("ui-corner-top").addClass("ui-corner-left");
+    });
+  </script>
+</body>
+
+</html>
